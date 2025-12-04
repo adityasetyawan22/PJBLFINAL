@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/adit"
+        android:label="Devrius"
+        android:roundIcon="@mipmap/adit"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.DayNight"
+        tools:targetApi="31">
+
+        <!-- Main Activity - Tugassatu -->
+        <activity
+            android:name=".Tugassatu"
+            android:exported="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Devrius">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Form Pendaftaran -->
+        <activity
+            android:name=".Formactivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Form Pendaftaran"
+            android:parentActivityName=".Tugassatu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Tugassatu" />
+        </activity>
+
+        <!-- Hasil Form -->
+        <activity
+            android:name=".Hasilform"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Hasil Pendaftaran"
+            android:parentActivityName=".Formactivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Formactivity" />
+        </activity>
+
+        <!-- Pemesanan Makanan -->
+        <activity
+            android:name=".Formpemesanan"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Pemesanan Makanan"
+            android:parentActivityName=".Tugassatu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Tugassatu" />
+        </activity>
+
+        <!-- Nota Transaksi -->
+        <activity
+            android:name=".Notatransaksi"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Nota Transaksi"
+            android:parentActivityName=".Formpemesanan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Formpemesanan" />
+        </activity>
+
+        <!-- Profile -->
+        <activity
+            android:name=".Profile"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Profile"
+            android:parentActivityName=".Tugassatu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Tugassatu" />
+        </activity>
+
+        <!-- Konversi Suhu -->
+        <activity
+            android:name=".Temperatur"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Konversi Suhu"
+            android:parentActivityName=".Tugassatu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Tugassatu" />
+        </activity>
+
+        <!-- Kalkulator -->
+        <activity
+            android:name=".Constrain"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:label="Kalkulator"
+            android:parentActivityName=".Tugassatu">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Tugassatu" />
+        </activity>
+
+    </application>
+
+</manifest>

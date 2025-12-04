@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hasil Form Pendaftaran"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface"
+            android:textAlignment="center"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Card Container untuk Hasil -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:padding="20dp"
+            android:elevation="4dp">
+
+            <!-- Nama -->
+            <TextView
+                android:id="@+id/tvHasilNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nama: -"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:paddingVertical="8dp"
+                android:layout_marginBottom="12dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Alamat -->
+            <TextView
+                android:id="@+id/tvHasilAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alamat: -"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:paddingVertical="8dp"
+                android:layout_marginBottom="12dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Nomor HP -->
+            <TextView
+                android:id="@+id/tvHasilNoHP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No HP: -"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:paddingVertical="8dp"
+                android:layout_marginBottom="12dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Agama -->
+            <TextView
+                android:id="@+id/tvHasilAgama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agama: -"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:paddingVertical="8dp"
+                android:layout_marginBottom="12dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Jenis Kelamin -->
+            <TextView
+                android:id="@+id/tvHasilJenisKelamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin: -"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:paddingVertical="8dp"
+                android:layout_marginBottom="12dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#E0E0E0"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Hobi -->
+            <TextView
+                android:id="@+id/tvHasilHobi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hobi: -"
+                android:textSize="16sp"
+                android:textColor="?attr/colorOnSurface"
+                android:paddingVertical="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Button Kembali (Optional) -->
+        <Button
+            android:id="@+id/btnKembali"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Kembali"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#FFC46D"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorScreenBackground">#48DE4D</color>
+    <color name="colorCardBackground">#1E1E1E</color>
+    <color name="colorPrimaryText">#FFFFFF</color>
+    <color name="colorAccent">#ff9955</color>
+    <color name="colorButtonBackground">#3d5afe</color>
+    <color name="colorButtonText">#FFFFFF</color>
+    <color name="red">#FF4444</color>
+    <color name="grey">#757575FF</color>
+    <color name="g">#1E1E1E</color>
+
+</resources>

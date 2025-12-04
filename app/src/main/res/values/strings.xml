@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyApplication2</string>
+
+    <!-- Form Activity Strings -->
+    <string name="form_title">Form Pendaftaran</string>
+
+    <string name="label_nama">Nama Lengkap</string>
+    <string name="hint_nama">Masukkan nama lengkap</string>
+
+    <string name="label_alamat">Alamat</string>
+    <string name="hint_alamat">Masukkan alamat</string>
+
+    <string name="label_nohp">Nomor HP</string>
+    <string name="hint_nohp">Masukkan nomor HP</string>
+
+    <string name="label_agama">Agama</string>
+
+    <string name="label_jenis_kelamin">Jenis Kelamin</string>
+    <string name="rb_laki_laki">Laki-laki</string>
+    <string name="rb_perempuan">Perempuan</string>
+
+    <string name="label_hobi">Hobi</string>
+    <string name="cb_membaca">Membaca</string>
+    <string name="cb_makan">Makan</string>
+    <string name="cb_tidur">Tidur</string>
+    <string name="cb_olahraga">Olahraga</string>
+
+    <string name="btn_simpan">SIMPAN</string>
+
+    <!-- Array Agama untuk Spinner -->
+    <string-array name="agama">
+        <item>Pilih Agama</item>
+        <item>Islam</item>
+        <item>Kristen</item>
+        <item>Katolik</item>
+        <item>Hindu</item>
+        <item>Buddha</item>
+        <item>Konghucu</item>
+    </string-array>
+
+    <!-- Nota Transaksi Strings -->
+    <string name="nota_transaksi">NOTA TRANSAKSI</string>
+    <string name="nama_warung">Foododoo</string>
+    <string name="alamat_warung">Jl. Ahmad Sahroni No.19</string>
+
+    <!-- Table Headers -->
+    <string name="no">NO</string>
+    <string name="item">ITEM</string>
+    <string name="qty">QTY</string>
+    <string name="subtotal">SUBTOTAL</string>
+    <string name="aksi">AKSI</string>
+
+    <!-- Menu Labels -->
+    <string name="pilih_menu_makanan">Pilih Menu Makanan</string>
+    <string name="mie_ayam">Mie Ayam</string>
+    <string name="soto">Soto</string>
+    <string name="bakso">Bakso</string>
+    <string name="ayam_goreng">Ayam Goreng</string>
+    <string name="ayam_bakar">Ayam Bakar</string>
+    <string name="ayam_geprek">Ayam Geprek</string>
+
+    <!-- Input Section -->
+    <string name="input_manual">Input Manual</string>
+    <string name="nama_item">Nama Item</string>
+    <string name="harga">Harga</string>
+    <string name="tambah_item">Tambah Item</string>
+
+    <!-- Summary -->
+    <string name="grand_total">GRAND TOTAL</string>
+    <string name="rp_zero">Rp. 0</string>
+    <string name="reset">Reset</string>
+
+    <!-- Messages -->
+    <string name="semua_field_harus_diisi">Semua field harus diisi!</string>
+    <string name="harga_qty_harus_positif">Harga dan Qty harus angka positif!</string>
+    <string name="silakan_ubah_qty">Silakan ubah qty dan klik Tambah Item</string>
+    <string name="item_ditambahkan">Item ditambahkan</string>
+    <string name="item_dihapus">Item dihapus</string>
+    <string name="qty_minimal_1">Qty minimal 1</string>
+    <string name="transaksi_direset">Transaksi direset</string>
+
+    <!-- Content Descriptions -->
+    <string name="item_list">Daftar item transaksi</string>
+
+    <!-- Temperature Converter Strings - UPDATED -->
+    <string name="title_konversi_suhu">🌡️ Konversi Suhu</string>
+    <string name="judul_konversi">Konversi Suhu</string>
+    <string name="label_suhu_awal">Suhu Awal (Input)</string>
+    <string name="label_suhu_target">Suhu Target (Output)</string>
+    <string name="hint_input_angka">Input Angka</string>
+    <string name="hint_masukkan_nilai">Masukkan Nilai Suhu</string>
+    <string name="hint_output_angka">Hasil Konversi Otomatis</string>
+    <string name="hint_hasil_konversi">Hasil Konversi Otomatis</string>
+    <string name="btn_konversi">KONVERSI SEKARANG</string>
+    <string name="label_hasil_konversi">Hasil Konversi</string>
+    <string name="header_hasil_konversi">📊 Hasil Konversi</string>
+    <string name="label_suhu_awal_result">Suhu Awal:</string>
+    <string name="label_suhu_hasil_result">Hasil Konversi:</string>
+    <string name="icon_arrow">⬇️</string>
+    <string name="sample_input">100.00 °C</string>
+    <string name="sample_output">212.00 °F</string>
+    <string name="sample_info">✅ Konversi berhasil</string>
+
+    <!-- Temperature Units Array - UPDATED (Tanpa simbol untuk logic) -->
+    <string-array name="suhu">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+        <item>Reamur</item>
+    </string-array>
+
+    <!-- Temperature Conversion Messages - NEW -->
+    <string name="toast_masukkan_nilai">Masukkan nilai suhu terlebih dahulu!</string>
+    <string name="toast_format_invalid">Format angka tidak valid!</string>
+    <string name="info_titik_beku">❄️ Titik beku air</string>
+    <string name="info_titik_didih">🔥 Titik didih air</string>
+    <string name="info_suhu_nyaman">🌤️ Suhu ruangan nyaman</string>
+    <string name="info_sangat_panas">🥵 Suhu sangat panas</string>
+    <string name="info_sangat_dingin">🥶 Suhu sangat dingin</string>
+    <string name="info_konversi_berhasil">✅ Konversi berhasil</string>
+
+    <!-- Temperature Unit Symbols - NEW -->
+    <string name="unit_celsius">C</string>
+    <string name="unit_fahrenheit">F</string>
+    <string name="unit_kelvin">K</string>
+    <string name="unit_reamur">R</string>
+    <string name="format_temperature">%.2f °%s</string>
+
+    <!-- Form Pemesanan Strings -->
+    <string name="form_pemesanan">Form Pemesanan</string>
+    <string name="masukkan_nama_anda">Masukkan nama Anda</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="makanan">Makanan</string>
+    <string name="minuman">Minuman</string>
+    <string name="selanjutnya">Selanjutnya</string>
+
+    <!-- Menu Items -->
+    <string name="soto_ayam">Soto Ayam</string>
+    <string name="nasi_goreng">Nasi Goreng</string>
+    <string name="sop_daging">Sop Daging</string>
+    <string name="es_teh">Es Teh</string>
+    <string name="es_soda_gembira">Es Soda Gembira</string>
+    <string name="americano">AMERicanO</string>
+
+    <!-- Prices -->
+    <string name="rp_3_000">Rp 3.000</string>
+    <string name="rp_7_000">Rp 7.000</string>
+    <string name="rp_8_000">Rp 8.000</string>
+    <string name="rp_10_000">Rp 10.000</string>
+    <string name="rp_15_000">Rp 15.000</string>
+
+    <!-- Default Values -->
+    <string name="default_quantity">0</string>
+
+    <!-- Hasil Form Strings -->
+    <string name="hasil_nama">Nama: %1$s</string>
+    <string name="hasil_alamat">Alamat: %1$s</string>
+    <string name="hasil_nohp">No HP: %1$s</string>
+    <string name="hasil_agama">Agama: %1$s</string>
+    <string name="hasil_jenis_kelamin">Jenis Kelamin: %1$s</string>
+    <string name="hasil_hobi">Hobi: %1$s</string>
+
+</resources>

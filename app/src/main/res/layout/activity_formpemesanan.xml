@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorScreenBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Form Pemesanan"
+            android:textSize="28sp"
+            android:textColor="#626f78"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Input Nama -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Pemesan"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Masukkan nama anda"
+            android:textColor="#ffffff"
+            android:textColorHint="#888888"
+            android:background="#2a2a2a"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:autofillHints="name"
+            android:inputType="textPersonName" />
+
+        <!-- Input Tanggal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/etTanggal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Pilih tanggal"
+            android:textColor="#d3d3d3"
+            android:textColorHint="#888888"
+            android:background="#2a2a2a"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_marginBottom="25dp"
+            android:inputType="none"
+            android:autofillHints="none"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <!-- Makanan Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MAKANAN"
+            android:textSize="18sp"
+            android:textColor="#626f78"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Soto Ayam -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#2a2a2a"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/soto"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="15dp"
+                android:contentDescription="Soto Ayam" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Soto Ayam"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 8.000"
+                    android:textSize="12sp"
+                    android:textColor="#cccccc" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etSotoAyam"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="#1a1a1a"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:autofillHints="none"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <!-- Nasi Goreng -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#2a2a2a"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/nasi_goreng"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="15dp"
+                android:contentDescription="Nasi Goreng" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nasi Goreng"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 15.000"
+                    android:textSize="12sp"
+                    android:textColor="#cccccc" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etNasiGoreng"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="#1a1a1a"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:autofillHints="none"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <!-- Sop Daging -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#2a2a2a"
+            android:padding="12dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/sop"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="15dp"
+                android:contentDescription="Sop Daging" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sop Daging"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 10.000"
+                    android:textSize="12sp"
+                    android:textColor="#cccccc" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etSopDaging"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="#1a1a1a"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:autofillHints="none"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <!-- Minuman Section -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MINUMAN"
+            android:textSize="18sp"
+            android:textColor="#626f78"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Es Teh -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#2a2a2a"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/es_teh"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="15dp"
+                android:contentDescription="Es Teh" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Es Teh"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 3.000"
+                    android:textSize="12sp"
+                    android:textColor="#cccccc" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etEsTeh"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="#1a1a1a"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:autofillHints="none"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <!-- Es Soda Gembira -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#2a2a2a"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/es_sodaa"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="15dp"
+                android:contentDescription="Es Soda Gembira" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Es Soda Gembira"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 7.000"
+                    android:textSize="12sp"
+                    android:textColor="#cccccc" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etEsJeruk"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="#1a1a1a"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:autofillHints="none"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <!-- Americano -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#2a2a2a"
+            android:padding="12dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/americano"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="15dp"
+                android:contentDescription="Americano" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Americano"
+                    android:textSize="14sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Rp. 10.000"
+                    android:textSize="12sp"
+                    android:textColor="#cccccc" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etKopiClaveoka"
+                android:layout_width="60dp"
+                android:layout_height="48dp"
+                android:minHeight="48dp"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="#1a1a1a"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:autofillHints="none"
+                android:importantForAutofill="no" />
+
+        </LinearLayout>
+
+        <!-- Button Lanjut ke Nota -->
+        <Button
+            android:id="@+id/btnLanjutKeNota"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Lanjut ke Nota Transaksi"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#FD0000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
